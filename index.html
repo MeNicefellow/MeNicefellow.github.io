@@ -8,21 +8,26 @@
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
-            background-color: #f4f4f4; /* new */
+            background-color: #f4f4f4;
         }
 
         .container {
             max-width: 800px;
             margin: auto;
-            padding: 20px; /* new */
+            padding: 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
         }
 
         img.profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: 20px 0;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* new */
+            margin-right: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
 
         h1, h2 {
@@ -35,30 +40,34 @@
 
         a {
             color: #1A0DAB;
-            text-decoration: none; /* new */
+            text-decoration: none;
         }
 
         a:hover {
-            color: #0D47A1; /* new */
+            color: #0D47A1;
         }
 
         .section {
             margin-bottom: 20px;
-            margin-top: 20px; /* new */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="assets/profile.png" alt="Dr. Nicefellow" class="profile-image">
-        <h1>Dr. Nicefellow</h1>
-        <p>Ph.D. in Computer Science | AI, LLM, and AGI Enthusiast</p>
-        
+        <div class="profile-section">
+            <img src="assets/profile.png" alt="Dr. Nicefellow" class="profile-image">
+            <div>
+                <h1>Dr. Nicefellow</h1>
+                <p>Ph.D. in Computer Science | AI, LLM, and AGI Enthusiast</p>
+            </div>
+        </div>
+
         <div class="section">
             <h2>About Me</h2>
             <p>I'm Dr. Nicefellow, a Ph.D. in Computer Science from a top-tier global university. I'm deeply fascinated by the world of Large Language Models (LLM) and Artificial General Intelligence (AGI). My journey in the AI landscape has been driven by a relentless curiosity and passion for pushing the boundaries of what these revolutionary technologies can achieve.</p>
         </div>
-        
+
         <div class="section">
             <h2>Projects & Contributions</h2>
             <ul>
@@ -69,7 +78,7 @@
                 <li><a href="https://huggingface.co/DrNicefellow/ChatAllInOne-Yi-34B-200K-V1">ChatAllInOne-Yi-34B-200K-V1 Model</a>: A finetuned Yi-34B-200K model with quantized versions.</li>
             </ul>
         </div>
-        
+
         <div class="section">
             <h2>Find Me Online</h2>
             <p><a href="https://github.com/MeNicefellow">Github</a></p>
